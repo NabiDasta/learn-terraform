@@ -13,3 +13,15 @@ variable "fruits" {
 output "fruits_third_count" {
   value = var.fruits[2]
 }
+
+variable "fruits_with_quantity" {
+  default = {
+    apple = 100
+    banana = 200
+    orange = 300
+  }
+}
+
+output "fruits_orange_quantity" {
+  value = var.fruits_with_quantity["orange"]
+}
