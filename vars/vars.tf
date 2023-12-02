@@ -11,5 +11,5 @@ variable "fruits" {
 }
 
 output "fruits_third_count" {
-  value = var.fruits[3]
+  value = var.fruits[2]
 }
