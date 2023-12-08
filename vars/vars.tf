@@ -29,3 +29,8 @@ output "fruits_orange_quantity" {
 output "fruits_orange_quantity_with_name" {
   value = "orange quantity value is ${var.fruits_with_quantity["orange"]}"
 }
+
+variable "test1" {}
+output "test1" {
+  value = var.test1
+}
