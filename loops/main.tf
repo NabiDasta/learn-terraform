@@ -14,3 +14,20 @@ resource "null_resource" "example"{
   count = length(var.instance)
 
 }
+
+variable "instance1" {
+  default = {
+    frontend = {
+      name= "frontend"
+      instance_type = "t3.micro"
+    }
+    backend = {
+      name= "backend"
+      instance_type = "t3.micro"
+    }
+    mysql = {
+      name= "mysql"
+      instance_type = "t3.micro"
+    }
+  }
+}
