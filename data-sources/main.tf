@@ -6,7 +6,7 @@ data "aws_instance" "instance" {
 }
 
 output "instance" {
-  value = "Instance ID - ${data.aws_instance.instance.id} | Public IP - ${data.aws_instance.instance.public_ip} | Instance state -${data.aws_instance.instance.instance_id}"
+  value = "Instance ID - ${data.aws_instance.instance.id} | Public IP - ${data.aws_instance.instance.public_ip} | Instance state -${data.aws_instance.instance.instance_state}"
 
 }
 
