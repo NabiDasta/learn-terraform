@@ -1,6 +1,6 @@
 data "aws_instance" "instance" {
   filter {
-    name   = "tag.Name"
+    name   = "tag:Name"
     values = ["workstation"]
   }
 }
